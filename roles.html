@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Who We’re Looking For – FMD Cure Path</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #ffffff;
+        }
+        .navbar {
+            background-color: #003366;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 1rem;
+        }
+        .section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        h2 {
+            color: #003366;
+        }
+        .accordion-item { margin-bottom: 20px; }
+        .accordion-btn {
+            background-color: #003366;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            font-size: 18px;
+            text-align: left;
+            border-radius: 4px;
+        }
+        .accordion-panel {
+            display: none;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+        }
+        .accordion-panel ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+<script>
+        function toggleAccordion(button, id) {
+            var panel = document.getElementById(id);
+            var isOpen = panel.style.display === "block";
+            panel.style.display = isOpen ? "none" : "block";
+            button.innerHTML = (isOpen ? "+ " : "− ") + button.innerHTML.slice(2);
+        }
+    </script>
+</head>
+<body>
+<div class="navbar"><a href="index.html">Home</a><a href="roles.html">Who We’re Looking For</a></div>
+<div class="section">
+<h2>Who We Are Looking For</h2>
+<p>We're currently building the founding team of a breakthrough interdisciplinary project focused on using artificial intelligence to identify antiviral candidates against the Foot-and-Mouth Disease virus (FMDV).</p>
+<p>We're seeking researchers and specialists who are open to innovation, collaboration, and the possibility of contributing to a spin-off project. All listed roles are open for discussion. Let's build this together.</p>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel0')">+ Scientific Guarantor / Principal Research Partner</button>
+<div class="accordion-panel" id="panel0">
+<ul><li>Expertise in virology, molecular biology, biochemistry or related field</li>
+<li>Experience with research design and academic grant applications</li>
+<li>Ability to co-author or supervise the scientific direction of the project</li>
+<li>Willingness to engage with an interdisciplinary team (AI + chemistry)</li>
+<li>Open to supporting a startup/spin-off model with partial IP protection</li>
+<li>Ready to act as scientific mentor and lead scientific authority</li>
+<li>Can help structure lab research phases</li>
+<li>May co-sign or advise grant proposals</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel1')">+ Computational Biologist / Bioinformatician</button>
+<div class="accordion-panel" id="panel1">
+<ul><li>Experience with genome or protein analysis and sequence alignment</li>
+<li>Ability to prepare and clean biological data for AI models</li>
+<li>Collaborates closely with virologists and AI developers</li>
+<li>Supports virtual screening and target validation</li>
+<li>Familiar with viral structure and known mechanisms of action</li>
+<li>Able to evaluate molecular candidates from a biological perspective</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel2')">+ AI Specialist / ML Engineer</button>
+<div class="accordion-panel" id="panel2">
+<ul><li>Experience with drug discovery, QSAR, molecular modeling or reinforcement learning</li>
+<li>Builds or fine-tunes models for predicting molecular activity</li>
+<li>Works with molecular representations (SMILES, graph-based models, etc.)</li>
+<li>Optimizes compound libraries based on target profiles</li>
+<li>Supports virtual screening and de novo molecular design</li>
+<li>Coordinates with biology/chemistry to adjust model parameters</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel3')">+ Medicinal Chemist / Molecule Designer</button>
+<div class="accordion-panel" id="panel3">
+<ul><li>Designs potential antiviral molecules</li>
+<li>Understands structure-activity relationships (SAR)</li>
+<li>Able to evaluate chemical feasibility and toxicity</li>
+<li>Prepares compound datasets and libraries</li>
+<li>Supports translation from AI-generated designs to testable molecules</li>
+<li>Collaborates with lab team to define experimental steps</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel4')">+ Virologist / Molecular Biologist</button>
+<div class="accordion-panel" id="panel4">
+<ul><li>Provides expert knowledge of the virus structure and replication</li>
+<li>Advises on potential molecular targets within the viral life cycle</li>
+<li>Helps define laboratory assays and biological testing pipeline</li>
+<li>Coordinates with chemistry and bioinformatics</li>
+<li>May contribute to writing scientific papers and grant proposals</li>
+<li>Assists in assessing the biological effect of selected compounds</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel5')">+ Lab Manager / Technician</button>
+<div class="accordion-panel" id="panel5">
+<ul><li>Ensures lab operations and material handling</li>
+<li>Coordinates biological assays and test setups</li>
+<li>Familiar with antiviral or BSL2+ or BSL3 lab environments</li>
+<li>Keeps track of experimental results and documentation</li>
+<li>Supports communication between lab and other team parts (AI, coordination)</li>
+<li>Helps with sample preparation and safety compliance</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel6')">+ Project Coordinator *(already filled)*</button>
+<div class="accordion-panel" id="panel6">
+<ul><li>Oversees team communication and progress tracking</li>
+<li>Manages timelines, external relations, and administrative matters</li>
+<li>Connects scientific and technological streams</li>
+<li>Drives the vision and fundraising efforts</li>
+<li>Coordinates outreach to universities and institutions</li>
+<li>Assists in building a spin-off structure and legal framework</li></ul>
+</div>
+</div>
+</div>
+<div class="footer">
+    © 2025 FMD Cure Path. All rights reserved.
+</div>
+</body>
+</html>
