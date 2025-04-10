@@ -16,7 +16,21 @@
         .contact { background-color: #e6f0ff; padding: 20px; text-align: center; margin-top: 40px; }
         .footer { background-color: #f2f2f2; text-align: center; padding: 10px; font-size: 12px; color: #666; }
         a { color: #003366; text-decoration: none; }
-        .language-switcher { position: absolute; top: 15px; right: 20px; }
+        .language-switcher {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        @media (max-width: 600px) {
+            .language-switcher {
+                position: static;
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
         .language-switcher a { color: white; margin-left: 10px; font-size: 14px; }
     </style>
 </head>

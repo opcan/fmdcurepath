@@ -64,7 +64,21 @@
             color: #666;
             margin-top: 40px;
         }
-        .language-switcher { position: absolute; top: 15px; right: 20px; }
+        .language-switcher {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        @media (max-width: 600px) {
+            .language-switcher {
+                position: static;
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
         .language-switcher a { color: white; margin-left: 10px; font-size: 14px; }
     </style>
 <script>
