@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+<head>
+<meta charset="utf-8"/>
+<title>Koho hledáme – FMD Cure Path</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #ffffff;
+        }
+        .navbar {
+            background-color: #003366;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 1rem;
+        }
+        .section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        h2 {
+            color: #003366;
+        }
+        .accordion-item { margin-bottom: 20px; }
+        .accordion-btn {
+            background-color: #003366;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            font-size: 18px;
+            text-align: left;
+            border-radius: 4px;
+        }
+        .accordion-panel {
+            display: none;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+        }
+        .accordion-panel ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+            margin-top: 40px;
+        }
+        .language-switcher { position: absolute; top: 15px; right: 20px; }
+        .language-switcher a { color: white; margin-left: 10px; font-size: 14px; }
+    </style>
+<script>
+        function toggleAccordion(button, id) {
+            var panel = document.getElementById(id);
+            var isOpen = panel.style.display === "block";
+            panel.style.display = isOpen ? "none" : "block";
+            button.innerHTML = (isOpen ? "+ " : "− ") + button.innerHTML.slice(2);
+        }
+    </script>
+</head>
+<body>
+<div class="navbar">
+    <a href="index_cs.html">Domů</a>
+    <a href="role_cs.html">Koho hledáme</a>
+    <div class="language-switcher">
+        <a href="roles.html">EN</a>
+        <a href="role_cs.html" style="text-decoration: underline; font-weight: bold;">CZ</a>
+    </div>
+</div>
+<div class="section">
+<h2>Koho hledáme</h2>
+<p>V současné době budujeme zakládající tým průlomového interdisciplinárního projektu zaměřeného na využití umělé inteligence k identifikaci antivirových kandidátů proti viru slintavky a kulhavky (FMDV).</p>
+<p>Hledáme výzkumníky a specialisty, kteří jsou otevřeni inovacím, spolupráci a možnosti přispět do spin-off projektu. Všechny uvedené role jsou otevřené k diskuzi. Pojďme to vybudovat společně.</p>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel0')">+ Vědecký garant / Hlavní výzkumný partner</button>
+<div class="accordion-panel" id="panel0">
+<ul><li>Odborné znalosti v oblasti virologie, molekulární biologie, biochemie nebo příbuzných oborů</li>
+<li>Zkušenosti s návrhem výzkumu a akademickými grantovými žádostmi</li>
+<li>Schopnost spoluautorství nebo dohledu nad vědeckým směřováním projektu</li>
+<li>Ochota spolupracovat s interdisciplinárním týmem (AI + chemie)</li>
+<li>Otevřenost k podpoře startupového/spin-off modelu s částečnou ochranou IP</li>
+<li>Připravenost působit jako vědecký mentor a hlavní vědecká autorita</li>
+<li>Může pomoci strukturovat fáze laboratorního výzkumu</li>
+<li>Může spolupodepisovat nebo radit při grantových návrzích</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel1')">+ Výpočetní biolog / Bioinformatik</button>
+<div class="accordion-panel" id="panel1">
+<ul><li>Zkušenosti s analýzou genomu nebo proteinů a zarovnáním sekvencí</li>
+<li>Schopnost připravit a vyčistit biologická data pro AI modely</li>
+<li>Úzce spolupracuje s virology a AI vývojáři</li>
+<li>Podporuje virtuální screening a validaci cílů</li>
+<li>Obeznámen se strukturou virů a známými mechanismy účinku</li>
+<li>Schopen hodnotit molekulární kandidáty z biologického hlediska</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel2')">+ AI specialista / ML inženýr</button>
+<div class="accordion-panel" id="panel2">
+<ul><li>Zkušenosti s objevováním léčiv, QSAR, molekulárním modelováním nebo reinforcement learningem</li>
+<li>Vytváří nebo dolaďuje modely pro predikci molekulární aktivity</li>
+<li>Pracuje s molekulárními reprezentacemi (SMILES, modely založené na grafech, atd.)</li>
+<li>Optimalizuje knihovny sloučenin na základě cílových profilů</li>
+<li>Podporuje virtuální screening a de novo molekulární design</li>
+<li>Koordinuje s biology/chemiky úpravu parametrů modelu</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel3')">+ Medicinální chemik / Návrhář molekul</button>
+<div class="accordion-panel" id="panel3">
+<ul><li>Navrhuje potenciální antivirové molekuly</li>
+<li>Rozumí vztahům mezi strukturou a aktivitou (SAR)</li>
+<li>Schopen hodnotit chemickou proveditelnost a toxicitu</li>
+<li>Připravuje databáze sloučenin a knihovny</li>
+<li>Podporuje přenos z AI generovaných návrhů na testovatelné molekuly</li>
+<li>Spolupracuje s laboratorním týmem při definování experimentálních kroků</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel4')">+ Virolog / Molekulární biolog</button>
+<div class="accordion-panel" id="panel4">
+<ul><li>Poskytuje odborné znalosti o struktuře viru a jeho replikaci</li>
+<li>Radí ohledně potenciálních molekulárních cílů v životním cyklu viru</li>
+<li>Pomáhá definovat laboratorní testy a biologický testovací proces</li>
+<li>Koordinuje s chemií a bioinformatikou</li>
+<li>Může přispívat k psaní vědeckých prací a grantových návrhů</li>
+<li>Pomáhá při posuzování biologického účinku vybraných sloučenin</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel5')">+ Laboratorní manažer / Technik</button>
+<div class="accordion-panel" id="panel5">
+<ul><li>Zajišťuje laboratorní operace a manipulaci s materiálem</li>
+<li>Koordinuje biologické testy a testovací postupy</li>
+<li>Obeznámen s antivirovým nebo BSL2+ či BSL3 laboratorním prostředím</li>
+<li>Sleduje experimentální výsledky a dokumentaci</li>
+<li>Podporuje komunikaci mezi laboratoří a ostatními částmi týmu (AI, koordinace)</li>
+<li>Pomáhá s přípravou vzorků a dodržováním bezpečnostních předpisů</li></ul>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-btn" onclick="toggleAccordion(this, 'panel6')">+ Projektový koordinátor *(již obsazeno)*</button>
+<div class="accordion-panel" id="panel6">
+<ul><li>Dohlíží na týmovou komunikaci a sledování pokroku</li>
+<li>Řídí časový harmonogram, externí vztahy a administrativní záležitosti</li>
+<li>Propojuje vědecké a technologické proudy</li>
+<li>Řídí vizi a fundraisingové úsilí</li>
+<li>Koordinuje spolupráci s univerzitami a institucemi</li>
+<li>Pomáhá budovat spin-off strukturu a právní rámec</li></ul>
+</div>
+</div>
+</div>
+<div class="footer">
+    © 2025 FMD Cure Path. Všechna práva vyhrazena.
+</div>
+</body>
+</html>
